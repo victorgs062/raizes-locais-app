@@ -13,9 +13,7 @@ class ApiService {
   factory ApiService() => _instance;
   ApiService._internal();
 
-  static const String hostUrl = kIsWeb
-      ? 'http://localhost:5000'
-      : 'http://10.1.1.125:5000';
+  static const String hostUrl = 'https://modest-encouragement-production-fcdd.up.railway.app';
   static const String baseUrl = '$hostUrl/api';
   String? token;
 
